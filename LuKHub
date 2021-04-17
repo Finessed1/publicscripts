@@ -1,0 +1,40 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local owlhub = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+main.Position = UDim2.new(0.635145187, 0, 0.604368925, 0)
+main.Size = UDim2.new(0, 440, 0, 267)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+label.Size = UDim2.new(0, 440, 0, 50)
+label.Font = Enum.Font.SourceSans
+label.Text = "LuKHub"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 14.000
+
+owlhub.Name = "owlhub"
+owlhub.Parent = main
+owlhub.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+owlhub.Position = UDim2.new(0, 0, 0.254681647, 0)
+owlhub.Size = UDim2.new(0, 200, 0, 50)
+owlhub.Font = Enum.Font.SourceSans
+owlhub.Text = "OwlHub"
+owlhub.TextColor3 = Color3.fromRGB(0, 0, 0)
+owlhub.TextSize = 30.000
+owlhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+end)
